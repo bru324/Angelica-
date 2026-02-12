@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%);
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Container principal */
+.container {
+  background: #ffffff;
+  max-width: 420px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 1%;
+  box-shadow: 0 10px 25px rgba(115, 24, 68, 0.25);
+}
+
+
+
+h1 {
+  margin: 10px 0;
+  color: #731844;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Botão principal */
+.btn {
+  display: block;
+  background: #731844;
+  color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 15px 0;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f7b2b6;
+  color: #731844;
+  font-weight: bold;
+}
+
+/* Accordion botão */
+.accordion-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #f7b2b6;
+  color: #731844;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.accordion-btn:hover {
+  background: #731844;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* Accordion conteúdo */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background: #fff;
+  border: 1px solid #f7b2b6;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 0 15px;
+}
+
+.accordion-content.active {
+  max-height: 1000px;
+  padding: 15px;
+}
+
+.accordion-content p {
+  text-align: left;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #333;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.accordion-content p:hover {
+  font-weight: bold;
+  color: #731844;
+}
+
+/* Redes sociais */
+.social {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.instagram,
+.location {
+  color: #731844;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.instagram:hover,
+.location:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+/* Sobre Mim */
+.about-section {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 🔥 SOLUÇÃO 3 APLICADA AQUI */
+.about-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 1%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.about-text p {
+  font-size: 14px;
+  color: #333;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.about-text .signature {
+  font-weight: bold;
+  color: #731844;
+  margin-top: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 480px) {
+  .btn,
+  .accordion-btn {
+    font-size: 14px;
+  }
+}
+
+/* Força cores consistentes no modo escuro */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #f7b2b6 0%, #fdf5f7 100%);
+    color-scheme: light;
+  }
+}
+/* Bolinhas nas opções do accordion */
+.accordion-content p {
+  position: relative;
+  padding-left: 22px;
+}
+
+.accordion-content p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #731844;
+  font-size: 16px;
+}
+.accordion-content p:hover::before {
+  transform: translateX(3px);
+  transition: 0.2s;
+}
