@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angelica Hipolito Studio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="container fade-in">
+
+    <!-- Logo -->
+    <img
+      src="https://scontent.fumu6-1.fna.fbcdn.net/v/t1.15752-9/628390256_803894662725438_194324862989410861_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=9f807c&_nc_ohc=vYwBFiqxPZkQ7kNvwF-mYO2&_nc_oc=AdmwUwYuJQNb168ec3xfKAkz4Wvv6GELFZHxQ_auFGQ4b2RPAaHqdbTuowmah_XvyuY&_nc_zt=23&_nc_ht=scontent.fumu6-1.fna&oh=03_Q7cD4gFZ9z7bno2zr2Fhb-YBDU2CykQEgadOkrYaOznzpVbkhw&oe=69B555EA"
+      alt="Angelica Hipolito"
+      class="logo"
+    >
+
+    <h1>Angelica Hipolito</h1>
+    <p class="subtitle">
+      Studio especializado em realçar a beleza natural
+    </p>
+
+    <a
+      class="btn"
+      href="https://wa.me/5544998104219?text=Olá, gostaria de consultar horários e valores"
+      target="_blank"
+    >
+      Consultar horários e valores
+    </a>
+
+    <!-- Accordion -->
+    <div class="accordion">
+
+      <!-- SOBRE MIM (primeiro) -->
+      <button class="accordion-btn">Sobre Mim</button>
+      <div class="accordion-content">
+        <div class="about-section">
+          <div class="about-content">
+            <img 
+              src="https://instagram.fumu6-1.fna.fbcdn.net/v/t1.15752-9/628390256_803894662725438_194324862989410861_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ccb=7-5&_nc_sid=fc17b8&efg=eyJxZV9ncm91cHMiOlsiaWdkX2Jlc3RfZWZmb3J0X2ltYWdlOnRlc3QiXX0%3D&_nc_ohc=vYwBFiqxPZkQ7kNvwF-mYO2&_nc_oc=AdmwUwYuJQNb168ec3xfKAkz4Wvv6GELFZHxQ_auFGQ4b2RPAaHqdbTuowmah_XvyuY&_nc_zt=23&_nc_ht=instagram.fumu6-1.fna&oh=03_Q7cD4gHAi6Li-p8tkkkwg2geBnyajnTGC8AFIdFI4MS07Isszg&oe=69B555EA" 
+              alt="Angelica Hipolito"
+              class="about-photo"
+            >
+            <div class="about-text">
+              <p>Empreendedora na área da beleza desde 2022, iniciei minha trajetória com alisamentos e, em 2023, me reposicionei no mercado de sobrancelhas — começando do zero e construindo minha autoridade com estratégia, posicionamento e excelência.</p>
+
+              <p>Hoje sou especialista em sobrancelhas, criadora do evento <strong>Chá das Fadas</strong>, idealizadora do treinamento <strong>For Business</strong> e palestrante no mercado da beleza.</p>
+
+              <p>Atendo mulheres que desejam realçar sua beleza com naturalidade e também formo profissionais que querem transformar técnica em negócio lucrativo.</p>
+
+              <p class="signature">
+                Beleza com propósito.<br>
+                Negócio com estratégia.<br>
+                Resultados que falam por si.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sobrancelhas -->
+      <button class="accordion-btn">Sobrancelhas</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, gostaria de agendar design personalizado')">Design personalizado</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar design com henna')">Design com henna</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar design com coloração')">Design com coloração (30 dias a mais)</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar Brow Lamination')">Brow Lamination</p>
+      </div>
+
+      <!-- Cílios -->
+      <button class="accordion-btn">Cílios</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, gostaria de agendar extensão de cílios')">Extensão de cílios</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar Lash Lifting')">Lash Lifting</p>
+      </div>
+
+      <!-- Cabelos -->
+      <button class="accordion-btn">Cabelos</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, gostaria de agendar cauterização')">Cauterização</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar manutenção de pontas')">Manutenção de pontas</p>
+        <p onclick="abrirWhats('Olá, gostaria de agendar escova')">Escova</p>
+      </div>
+
+      <!-- Cursos -->
+      <button class="accordion-btn">Cursos Presencial</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, quero informações sobre o curso de designer de sobrancelhas iniciante')">
+          Designer de sobrancelhas iniciante
+        </p>
+        <p onclick="abrirWhats('Olá, quero informações sobre o curso de designer de sobrancelhas avançado')">
+          Designer de sobrancelhas avançado
+        </p>
+        <p onclick="abrirWhats('Olá, quero informações sobre estágio em design de sobrancelhas')">
+          Estágio em design de sobrancelhas
+        </p>
+      </div>
+
+      <!-- Consultoria -->
+      <button class="accordion-btn">Consultoria Online</button>
+      <div class="accordion-content">
+        <p onclick="abrirWhats('Olá, quero informações sobre a consultoria online Desbloqueando sua voz')">
+          Consultoria online “Desbloqueando sua voz”
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Redes sociais -->
+    <div class="social">
+      <a href="https://www.instagram.com/angelicahipolitoo" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.google.com/maps/dir/?api=1&destination=-23.3710257,-52.9461404" target="_blank" class="location">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Script -->
+  <script>
+    // Accordion
+    const buttons = document.querySelectorAll(".accordion-btn");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        content.classList.toggle("active");
+      });
+    });
+
+    // WhatsApp
+    function abrirWhats(mensagem) {
+      const numero = "5544998104219";
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
